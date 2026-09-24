@@ -18,3 +18,6 @@
 | 2026-09-23 | «Llamar» y «Cómo llegar» son `<button>`, no enlaces. Mantienen su peso visual, pero al tocarlos muestran justo debajo «Función demostrativa: …» (anunciado con `aria-live`) | Se demuestra la experiencia de uso sin llamar ni abrir mapas de verdad |
 | 2026-09-23 | Aviso **«Proyecto ficticio / demo — no brinda atención veterinaria real»** arriba de todas las páginas, en todos los anchos y sin botón para cerrarlo. También en el pie, y reforzado en Emergencias con «contacta a una clínica veterinaria real» | Pedido explícito. En Emergencias el aviso se ve antes que cualquier botón de llamada |
 | 2026-09-23 | Recorridos aprobados: emergencia (2 toques hasta «Llamar» demo) y cita (6 campos → WhatsApp sin destinatario) | La barra lleva a la página, no a la acción, así que el aviso siempre se ve primero |
+| 2026-09-23 | **Diseño en Figma antes del código** (plan Professional, equipo UI/UX) | Pedido de Matías: aprobar la propuesta visual antes de implementar |
+| 2026-09-23 | `--borde-campo` pasa de `#8A979F` a `#6F7D86` | 3.0:1 era el mínimo justo para bordes de campos; ahora da 4.2:1 |
+| 2026-09-23 | El bloque principal de Emergencias va en azul noche, con el aviso demo antes del H1 | Remite a la guardia nocturna sin usar rojo de fondo, y el aviso se ve antes que el botón de llamar |
