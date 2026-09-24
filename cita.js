@@ -111,7 +111,7 @@
     if (primera === "no") mascota += " · ya es paciente";
     var motivoTexto = form.motivo.options[form.motivo.selectedIndex].text;
     var extra = detalle.value.trim();
-    var fecha = leerFecha(dia.value).toLocaleDateString("es-PE", { weekday: "long", day: "numeric", month: "long" });
+    var fecha = leerFecha(dia.value).toLocaleDateString("es-PE", { weekday: "long", day: "numeric", month: "long" }).replace(",", ""); // «jueves 1 de octubre», como en Figma
     var franja = valorRadio("franja") === "manana" ? "en la mañana" : "en la tarde";
     return [
       "Hola, Sereno. Quiero pedir una cita.",
