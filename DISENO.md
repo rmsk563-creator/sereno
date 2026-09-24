@@ -1,7 +1,7 @@
 # Sereno — diseño visual
 
 > Archivo de Figma: <https://www.figma.com/design/lDSDTReeXTNl2Jbe0dTiRa> («Sereno — Diseño v1», equipo UI/UX).
-> Checkpoint 1 aprobado el 2026-09-23. Checkpoint 2 (cierre de la fase de Figma) entregado el mismo día y **pendiente de la última aprobación antes del código**. Revisión final hecha el mismo día: la búsqueda automática de ámbar como texto, calles, «propietario», emojis, `tel:` y textos sin estilo salió limpia en escritorio, móvil y tablet.
+> Checkpoint 1 aprobado el 2026-09-23. Checkpoint 2 (cierre de la fase de Figma) **aprobado** el mismo día: se pasa a código. Revisión final hecha el mismo día: la búsqueda automática de ámbar como texto, calles, «propietario», emojis, `tel:` y textos sin estilo salió limpia en escritorio, móvil y tablet.
 
 ## Qué hay en el archivo
 | Página | Contenido |
