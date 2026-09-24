@@ -33,3 +33,4 @@
 | 2026-09-24 | `404.html` con `<base href="/sereno/">` | GitHub Pages la sirve en cualquier ruta inexistente; sin `base`, las rutas relativas se rompen en subcarpetas |
 | 2026-09-24 | `[hidden] { display: none !important }` global | Una clase con `display: flex` ganaba sobre `hidden` y dejaba visible el resumen de errores vacío |
 | 2026-09-24 | Fotos en WebP locales (`assets/fotos/`), 2 tamaños con `srcset` para la portada y el gato | No depender del CDN de Unsplash y controlar el peso: la página más pesada, Equipo, tiene 498 KB de fotos |
+| 2026-09-24 | **Publicada la v1.0** en GitHub Pages (repo público `rmsk563-creator/sereno`, rama `main`, raíz) | Aprobación de Matías; las URL de canonical/og/sitemap ya coincidían con la URL real |

@@ -50,3 +50,32 @@ Revisadas las 7 páginas a 390 y 1440 px. Se corrigieron 2 avisos moderados: el 
 - Que las URL de `canonical`/`og` coincidan con la URL real.
 - Que las fuentes carguen desde Google Fonts en producción.
 - En un teléfono real: la barra inferior con la zona segura del iPhone y el calendario nativo del campo de fecha.
+
+---
+
+# Smoke test en producción (2026-09-24)
+**URL:** https://rmsk563-creator.github.io/sereno/ · **Repositorio:** https://github.com/rmsk563-creator/sereno
+
+- **HTTP:** las 7 páginas, CSS, JS, favicon, sprite, fotos, `og.png`, `robots.txt` y `sitemap.xml` responden 200 con el tipo de contenido correcto.
+- **404 real:** `/sereno/no-existe.html` y `/sereno/carpeta/que/no/existe` devuelven **404** con la página de Sereno completa y sus estilos, gracias a `<base href="/sereno/">`.
+- **Metadatos:** `canonical`, `og:url` y `og:image` apuntan a la URL pública real (no hubo que cambiarlas), y las 6 URL del `sitemap.xml` responden 200.
+- **Revisión del HTML publicado:** `noindex, nofollow` en 7 de 7 páginas, 0 `tel:` y 0 enlaces a mapas.
+- **Pruebas automáticas sobre los archivos publicados:** 184 / 184 ✅. Se sirven a través de un proxy local (`_qa/proxy_prod.py`) que los descarga en vivo de GitHub Pages, para poder leer el DOM desde el mismo origen.
+- **axe-core sobre producción:** 0 problemas en las 7 páginas, a 390 y 1440 px.
+- **Diseño adaptable en producción:** sin desbordamiento a 390, 768 y 1440 px. Capturas revisadas: Inicio a 390, Emergencias a 768, y Servicios y la 404 real a 1440.
+- **Pruebas en la página real** (HTTPS, sin iframe, clics reales mediante el protocolo de depuración de Chrome; `_qa/copiar_real.mjs`):
+  - **Servicio → Pedir cita:** `?motivo=vacunas` precarga «Vacunas».
+  - **Copiar mensaje:** el portapapeles contiene el mensaje exacto y aparece «Mensaje copiado». Funciona con y sin permiso previo.
+  - **Abrir WhatsApp:** abre una pestaña nueva en `wa.me/?text=…`, que WhatsApp redirige a `api.whatsapp.com/send/?text=…` **sin número de teléfono**, y aparece el estado «Se abrió WhatsApp…».
+
+## Diferencias entre local y producción
+Ninguna en contenido, estilos ni comportamiento.
+
+- **Nota del entorno de pruebas:** dentro de un iframe en Chrome headless, la promesa de `navigator.clipboard.writeText` no se resuelve nunca. Por eso «Copiar» se prueba en la página real y no en el arnés. No es un bug del sitio.
+- **Nota del entorno de pruebas:** Chrome headless no permite iframes de otro origen ni con `--disable-web-security` (se queda colgado); de ahí el proxy local.
+
+## Sin probar (necesita un teléfono real)
+- La zona segura de la barra inferior en un iPhone con barra de gestos.
+- El scroll con la cabecera sticky y la barra fija en Safari iOS.
+- El selector de fecha nativo.
+- La apertura de la app de WhatsApp desde el teléfono.

@@ -1,6 +1,6 @@
 # Sereno — contexto para sesiones nuevas
 
-Clínica veterinaria **FICTICIA** (portafolio de Matías). Web estática de 6 páginas + 404, sin build, en español, para GitHub Pages en `https://rmsk563-creator.github.io/sereno/` (aún no publicada).
+Clínica veterinaria **FICTICIA** (portafolio de Matías). Web estática de 6 páginas + 404, sin build, en español, para GitHub Pages en `https://rmsk563-creator.github.io/sereno/` (publicada el 2026-09-24, release `v1.0`; repo https://github.com/rmsk563-creator/sereno).
 
 **Leer antes de tocar nada:** `ROADMAP.md` (estado), `DECISIONS.md`, `ESTRUCTURA.md`, `MARCA.md`, `DISENO.md` (Figma: https://www.figma.com/design/lDSDTReeXTNl2Jbe0dTiRa) y `QA.md`.
 
