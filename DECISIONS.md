@@ -22,3 +22,7 @@
 | 2026-09-23 | `--borde-campo` pasa de `#8A979F` a `#6F7D86` | 3.0:1 era el mínimo justo para bordes de campos; ahora da 4.2:1 |
 | 2026-09-23 | El bloque principal de Emergencias va en azul noche, con el aviso demo antes del H1 | Remite a la guardia nocturna sin usar rojo de fondo, y el aviso se ve antes que el botón de llamar |
 | 2026-09-23 | Checkpoint 1 de diseño **aprobado**. Antes del código: checkpoint 2 + prototipo navegable mínimo + revisión de la escala tipográfica | Cerrar la fase de Figma completa antes de implementar |
+| 2026-09-23 | **Escala tipográfica de 12 estilos** (antes 17). El tamaño va por variables con modos Escritorio / Tablet / Móvil → `clamp()` en CSS | Había títulos duplicados por breakpoint, un estilo sin uso y 46 textos ajustados a mano |
+| 2026-09-23 | Tablet 768: cabecera móvil + barra inferior (el corte a escritorio sigue en 900 px), grid de 8 columnas y márgenes de 40 | Cumple la regla de ESTRUCTURA: la navegación de escritorio no cabe a 768 px |
+| 2026-09-23 | Guardia de viernes y sábado: «turno rotativo del equipo» | Corrige una incoherencia propia: la guardia es de 24 h todos los días, pero el Dr. Salas solo cubría de domingo a jueves |
+| 2026-09-23 | Prototipo mínimo: 4 flujos (cita y emergencia, en escritorio y en móvil), overlays demo para WhatsApp y Copiar | Validar los recorridos principales antes de implementar |
