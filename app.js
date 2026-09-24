@@ -31,7 +31,7 @@
     var d = new Date().getDay();
     hoy.querySelector("[data-dia]").textContent = "Hoy, " + dias[d];
     hoy.querySelector("[data-horas]").textContent =
-      (d === 0 ? "Consultas de 9:00 a 13:00" : "Consultas de 8:00 a 20:00") + " · Emergencias 24 h";
+      (d === 0 ? "Consultas de 9:00 a 13:00" : "Consultas de 8:00 a 20:00") + " · Emergencias 24\u00a0h";
   }
 
   /* Botones demo («Llamar», «Cómo llegar») ------------------------------

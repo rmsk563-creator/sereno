@@ -28,3 +28,8 @@
 | 2026-09-23 | Prototipo mínimo: 4 flujos (cita y emergencia, en escritorio y en móvil), overlays demo para WhatsApp y Copiar | Validar los recorridos principales antes de implementar |
 | 2026-09-23 | **Fase de Figma cerrada y aprobada**; se pasa a HTML/CSS/JS con Figma y la documentación como fuente de verdad | Aprobación de Matías |
 | 2026-09-23 | «Abrir WhatsApp» en la web abre `wa.me/?text=` **sin destinatario** (el diálogo del prototipo solo lo simulaba) | Ya estaba decidido; se deja explícito para que el código no copie el diálogo del prototipo |
+| 2026-09-24 | Las 7 páginas se generaron una vez con un script local y ahora **el HTML es la fuente**. Cabecera, pie, menú y barra están repetidos a propósito | Sin build; el sitio no depende de ninguna herramienta |
+| 2026-09-24 | Menú móvil con `<dialog>` modal | Atrapa el foco, se cierra con Esc y devuelve el foco sin código propio |
+| 2026-09-24 | `404.html` con `<base href="/sereno/">` | GitHub Pages la sirve en cualquier ruta inexistente; sin `base`, las rutas relativas se rompen en subcarpetas |
+| 2026-09-24 | `[hidden] { display: none !important }` global | Una clase con `display: flex` ganaba sobre `hidden` y dejaba visible el resumen de errores vacío |
+| 2026-09-24 | Fotos en WebP locales (`assets/fotos/`), 2 tamaños con `srcset` para la portada y el gato | No depender del CDN de Unsplash y controlar el peso: la página más pesada, Equipo, tiene 498 KB de fotos |

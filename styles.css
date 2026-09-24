@@ -100,6 +100,9 @@
 /* 2. Base ------------------------------------------------------------------ */
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Lo que lleva el atributo hidden no se ve nunca, aunque su clase le dé display: flex o grid */
+[hidden] { display: none !important; }
+
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -253,7 +256,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   letter-spacing: .08em;
   text-transform: uppercase;
   line-height: 1.2;
-  white-space: nowrap;
 }
 
 /* Franja de emergencia: solo escritorio, nunca en Emergencias */
@@ -738,7 +740,7 @@ select.campo__control {
   .acciones-demo { flex-direction: row; flex-wrap: wrap; align-items: center; }
   .acciones-demo .mensaje-demo { order: 1; flex-basis: 100%; }
 }
-.costo { border: 1px solid var(--linea-sobre-noche); border-radius: var(--radio-tarjeta); padding: var(--esp-6) 20px; display: grid; gap: var(--esp-4); align-content: start; }
+.costo { align-self: start; border: 1px solid var(--linea-sobre-noche); border-radius: var(--radio-tarjeta); padding: var(--esp-6) 20px; display: grid; gap: var(--esp-4); align-content: start; }
 .costo__fila { display: flex; justify-content: space-between; align-items: center; gap: var(--esp-3); padding-bottom: var(--esp-3); border-bottom: 1px solid var(--linea-sobre-noche); }
 .costo__fila dd { margin: 0; font-family: var(--fuente-titulos); font-size: var(--tipo-titulo-3); font-weight: 600; font-variant-numeric: tabular-nums; }
 .costo dl { margin: 0; display: grid; gap: var(--esp-4); }
