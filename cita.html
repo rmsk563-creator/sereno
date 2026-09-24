@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pedir cita · Sereno, veterinaria en Surco</title>
+<meta name="description" content="Pide una cita para tu perro, gato o conejo por WhatsApp en menos de un minuto. Horario y qué traer. Proyecto ficticio: nadie confirma la cita.">
+<!-- Sitio ficticio de portafolio: no debe aparecer en buscadores (DECISIONS.md) -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://rmsk563-creator.github.io/sereno/cita.html">
+<meta name="theme-color" content="#15314A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="Sereno · clínica veterinaria ficticia">
+<meta property="og:title" content="Pedir cita · Sereno, veterinaria en Surco">
+<meta property="og:description" content="Pide una cita para tu perro, gato o conejo por WhatsApp en menos de un minuto. Horario y qué traer. Proyecto ficticio: nadie confirma la cita.">
+<meta property="og:url" content="https://rmsk563-creator.github.io/sereno/cita.html">
+<meta property="og:image" content="https://rmsk563-creator.github.io/sereno/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logos/icono-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/logos/icono-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Atkinson+Hyperlegible+Next:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<p class="aviso-demo"><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#info"></use></svg><span>Proyecto ficticio / demo — no brinda atención veterinaria real</span></p>
+<a class="franja" href="emergencias.html">
+  <span class="contenedor franja__fila"><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span>¿Es una emergencia? Guardia las 24 horas, también feriados.</span> <span class="franja__accion">Qué hacer ahora →</span></span>
+</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="logo" href="index.html"><img src="assets/logos/logo-claro.svg" alt="Sereno, clínica veterinaria · Inicio" width="145" height="40"></a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="servicios.html">Servicios y precios</a></li>
+        <li><a class="nav__enlace" href="equipo.html">Equipo y clínica</a></li>
+        <li><a class="nav__enlace nav__enlace--urgencia" href="emergencias.html">Emergencias 24 h</a></li>
+        
+      </ul>
+    </nav>
+    <button class="boton-menu" type="button" data-abrir-menu aria-haspopup="dialog" aria-controls="menu" aria-expanded="false"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#menu"></use></svg>Menú</button>
+  </div>
+</header>
+<main id="contenido" tabindex="-1">
+<div class="contenedor encabezado-pagina">
+  <div class="encabezado-pagina__titulo"><h1>Pedir cita</h1><span class="etiqueta-demo">Demo</span></div>
+  <p class="t-entradilla">Completa esto y te armamos el mensaje de WhatsApp. Te toma menos de un minuto.</p>
+  <p class="aviso-urgencia"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span>¿Es urgente? No uses este formulario.</span><a href="emergencias.html">Ir a Emergencias →</a></p>
+</div>
+<div class="contenedor cita">
+  <div>
+    <form class="tarjeta-formulario" id="form-cita" novalidate aria-labelledby="t-form">
+      <h2 id="t-form" class="visualmente-oculto">Datos de la cita</h2>
+      <div class="resumen-errores" id="resumen-errores" role="alert" tabindex="-1" hidden><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><p id="resumen-texto"></p></div>
+
+      <fieldset class="grupo-campos">
+        <legend>Tu mascota</legend>
+        <div class="fila-campos">
+          <div class="campo">
+            <label class="campo__rotulo" for="nombre-mascota">Nombre de tu mascota<span class="campo__obligatorio" aria-hidden="true">*</span></label>
+            <input class="campo__control" id="nombre-mascota" name="nombre-mascota" type="text" placeholder="Ej.: Lola" maxlength="40" required aria-describedby="error-nombre-mascota" autocomplete="off">
+            <p class="campo__error" id="error-nombre-mascota" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+          </div>
+          <div class="campo">
+            <label class="campo__rotulo" for="edad">Edad aproximada <span class="suave" style="font-weight:400">(opcional)</span></label>
+            <input class="campo__control" id="edad" name="edad" type="text" placeholder="Ej.: 3 años" maxlength="20" autocomplete="off">
+          </div>
+        </div>
+        <fieldset class="opciones" id="especie" aria-describedby="error-especie">
+          <legend>Especie<span class="campo__obligatorio" aria-hidden="true">*</span><span class="visualmente-oculto"> (obligatorio)</span></legend>
+          <div class="opciones__fila">
+            <label class="opcion"><input type="radio" name="especie" value="perro"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Perro</span></label><label class="opcion"><input type="radio" name="especie" value="gato"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Gato</span></label><label class="opcion"><input type="radio" name="especie" value="conejo"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Conejo</span></label><label class="opcion"><input type="radio" name="especie" value="otra"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Otra</span></label>
+          </div>
+          <p class="campo__error" id="error-especie" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+        </fieldset>
+        <fieldset class="opciones">
+          <legend>¿Es su primera visita? <span class="suave" style="font-weight:400">(opcional)</span></legend>
+          <div class="opciones__fila">
+            <label class="opcion"><input type="radio" name="primera" value="si"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Sí</span></label>
+            <label class="opcion"><input type="radio" name="primera" value="no"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>No</span></label>
+          </div>
+        </fieldset>
+      </fieldset>
+
+      <fieldset class="grupo-campos">
+        <legend>Motivo y fecha</legend>
+        <div class="campo">
+          <label class="campo__rotulo" for="motivo">Motivo<span class="campo__obligatorio" aria-hidden="true">*</span></label>
+          <select class="campo__control" id="motivo" name="motivo" required aria-describedby="error-motivo">
+            <option value="">Elige un motivo</option>
+            <option value="consulta">Consulta general</option>
+            <option value="vacunas">Vacunas</option>
+            <option value="desparasitacion">Desparasitación</option>
+            <option value="examenes">Exámenes (análisis, radiografía o ecografía)</option>
+            <option value="esterilizacion">Esterilización (evaluación previa)</option>
+            <option value="dental">Limpieza dental (evaluación previa)</option>
+            <option value="especialidad">Especialidad (felinos, conejos o dermatología)</option>
+            <option value="otro">Otro</option>
+          </select>
+          <p class="campo__error" id="error-motivo" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+        </div>
+        <div class="campo">
+          <label class="campo__rotulo" for="detalle">Detalle <span class="suave" style="font-weight:400">(opcional)</span></label>
+          <textarea class="campo__control" id="detalle" name="detalle" maxlength="300" rows="3" aria-describedby="contador-detalle"></textarea>
+          <p class="campo__ayuda" id="contador-detalle" aria-live="polite">0 / 300</p>
+        </div>
+        <div class="fila-campos">
+          <div class="campo">
+            <label class="campo__rotulo" for="dia">Día preferido<span class="campo__obligatorio" aria-hidden="true">*</span></label>
+            <input class="campo__control" id="dia" name="dia" type="date" required aria-describedby="error-dia">
+            <p class="campo__error" id="error-dia" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+          </div>
+          <fieldset class="opciones" id="franja" aria-describedby="error-franja">
+            <legend>Franja<span class="campo__obligatorio" aria-hidden="true">*</span><span class="visualmente-oculto"> (obligatorio)</span></legend>
+            <div class="opciones__fila">
+              <label class="opcion"><input type="radio" name="franja" value="manana"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Mañana</span></label>
+              <label class="opcion"><input type="radio" name="franja" value="tarde"><span><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg>Tarde</span></label>
+            </div>
+            <p class="campo__error" id="error-franja" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+          </fieldset>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo-campos">
+        <legend>Tus datos</legend>
+        <div class="campo">
+          <label class="campo__rotulo" for="tu-nombre">Tu nombre<span class="campo__obligatorio" aria-hidden="true">*</span></label>
+          <input class="campo__control" id="tu-nombre" name="tu-nombre" type="text" maxlength="40" required aria-describedby="error-tu-nombre" autocomplete="given-name">
+          <p class="campo__error" id="error-tu-nombre" hidden><svg class="icono icono--16" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg><span></span></p>
+        </div>
+        <p class="campo__ayuda botones" style="gap:var(--esp-2)"><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#info"></use></svg>No te pedimos celular ni correo: WhatsApp ya sabe quién escribe.</p>
+      </fieldset>
+
+      <div class="botones">
+        <button class="boton boton--farol" type="submit"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#mensaje"></use></svg>Preparar mensaje</button>
+        <p class="t-pequeno suave"><span aria-hidden="true">*</span> Obligatorio</p>
+      </div>
+    </form>
+
+    <section class="tarjeta-formulario" id="revisar" aria-labelledby="t-revisar" hidden>
+      <div class="pila" style="gap:var(--esp-2)"><h2 id="t-revisar" tabindex="-1" style="font-size:var(--tipo-titulo-3)">Revisa tu mensaje</h2><p class="suave">Así se verá en WhatsApp. Si algo no está bien, puedes editar tus datos.</p></div>
+      <pre class="vista-previa" id="vista-previa"></pre>
+      <div class="botones botones--apiladas-movil">
+        <a class="boton boton--farol" id="abrir-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#mensaje"></use></svg>Abrir WhatsApp<span class="visualmente-oculto"> (se abre en otra pestaña, sin destinatario)</span></a>
+        <button class="boton boton--linea" type="button" id="copiar"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#copiar"></use></svg>Copiar mensaje</button>
+        <button class="enlace-flecha" type="button" id="editar" style="background:none;border:0;padding:12px 4px;cursor:pointer;color:inherit">Editar mis datos</button>
+      </div>
+      <p class="estado-listo" id="estado" role="status" hidden></p>
+      <div class="mensaje-demo"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#info"></use></svg><div><p class="mensaje-demo__titulo">Así funciona esta demo</p><p>En un sitio real, este mensaje iría directo al WhatsApp de la clínica. Como Sereno es ficticio, WhatsApp se abrirá sin destinatario y te pedirá elegir un contacto: no lo envíes a nadie que no quieras.</p></div></div>
+    </section>
+  </div>
+
+  <aside class="informacion" aria-label="Horario y datos de la clínica">
+    <div class="informacion__bloque"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#reloj"></use></svg><div><p class="t-cuerpo-negrita">Horario de consultas</p><p class="t-pequeno suave">Lunes a sábado: 8:00–20:00<br>Domingos: 9:00–13:00<br>Emergencias: 24 h, todos los días</p></div></div>
+    <div class="informacion__bloque"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#ubicacion"></use></svg><div class="pila" style="gap:var(--esp-1)"><p class="t-cuerpo-negrita">Ubicación</p><p class="t-pequeno suave">Ubicación demostrativa: Surco, Lima</p><span class="etiqueta-demo">Ficticio / demo</span></div></div>
+    <div class="informacion__bloque"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#telefono"></use></svg><div class="pila" style="gap:var(--esp-1)"><p class="t-cuerpo-negrita">¿Prefieres llamar?</p><p class="t-pequeno suave">(01) 000-0000 · no realiza llamadas</p><span class="etiqueta-demo">Ficticio / demo</span></div></div>
+    <div class="informacion__bloque"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#check"></use></svg><div><p class="t-cuerpo-negrita">Qué traer</p><p class="t-pequeno suave">Su carnet de vacunas y exámenes previos<br>Correa, o transportadora si es gato o conejo<br>Ayuno de 8 h solo si te lo indicamos</p></div></div>
+  </aside>
+</div>
+</main>
+<footer class="pie sobre-noche">
+  <div class="contenedor">
+    <div class="pie__columnas">
+      <div class="pie__marca">
+        <img src="assets/logos/logo-oscuro.svg" alt="Sereno" width="145" height="40">
+        <p class="pie__lema">De día te cuidamos. De noche también.</p>
+      </div>
+      <div>
+        <h2 class="pie__titulo t-etiqueta">Horario</h2>
+        <ul class="pie__lista"><li>Consultas: lun–sáb, 8:00–20:00</li><li>Domingos: 9:00–13:00</li><li>Emergencias: 24 h, todos los días</li></ul>
+      </div>
+      <div>
+        <h2 class="pie__titulo t-etiqueta">Ubicación y contacto</h2>
+        <ul class="pie__lista"><li>Ubicación demostrativa: Surco, Lima</li><li>Teléfono: (01) 000-0000</li><li><span class="etiqueta-demo">Ficticio / demo</span></li></ul>
+      </div>
+      <nav aria-label="Pie de página">
+        <h2 class="pie__titulo t-etiqueta">Páginas</h2>
+        <ul class="pie__lista"><li><a href="servicios.html">Servicios y precios</a></li><li><a href="emergencias.html">Emergencias 24 h</a></li><li><a href="equipo.html">Equipo y clínica</a></li><li><a href="cita.html">Pedir cita</a></li><li><a href="legal.html">Aviso legal y privacidad</a></li></ul>
+      </nav>
+    </div>
+    <p class="pie__aviso">Proyecto ficticio / demo — no brinda atención veterinaria real. Ante una emergencia real, contacta a una clínica veterinaria real.</p>
+  </div>
+</footer>
+<nav class="barra-inferior" aria-label="Acciones rápidas">
+  <a class="boton boton--urgencia" href="emergencias.html"><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#alerta"></use></svg>Emergencia</a>
+</nav>
+<dialog class="menu" id="menu" aria-label="Menú">
+  <p class="aviso-demo"><svg class="icono icono--18" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#info"></use></svg><span>Proyecto ficticio / demo — no brinda atención veterinaria real</span></p>
+  <div class="menu__cabecera">
+    <img src="assets/logos/logo-claro.svg" alt="" width="145" height="40">
+    <button class="boton-menu" type="button" data-cerrar-menu><svg class="icono" aria-hidden="true" focusable="false"><use href="assets/iconos/iconos.svg#cerrar"></use></svg>Cerrar</button>
+  </div>
+  <nav aria-label="Menú principal">
+    <ul class="menu__lista">
+      <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+      <li><a class="menu__enlace" href="servicios.html">Servicios y precios</a></li>
+      <li><a class="menu__enlace menu__enlace--urgencia" href="emergencias.html">Emergencias 24 h</a></li>
+      <li><a class="menu__enlace" href="equipo.html">Equipo y clínica</a></li>
+      <li><a class="menu__enlace" href="cita.html" aria-current="page">Pedir cita</a></li>
+    </ul>
+  </nav>
+  <p class="menu__hoy" data-horario-hoy><span class="t-etiqueta suave" data-dia>Horario</span><span data-horas>Consultas lun–sáb 8:00–20:00 · dom 9:00–13:00 · Emergencias 24 h</span></p>
+</dialog>
+<p class="visualmente-oculto" id="anuncio-demo" role="status" aria-live="polite"></p>
+<script src="app.js?v=1" defer></script>
+<script src="cita.js?v=1" defer></script>
+</body>
+</html>

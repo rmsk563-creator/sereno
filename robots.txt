@@ -1,0 +1,8 @@
+# Sereno es un sitio FICTICIO (portafolio). Se permite rastrear a propósito:
+# si se bloqueara con Disallow, los buscadores no leerían el noindex de cada
+# página y podrían listar las URL igual. Lo que protege es
+# <meta name="robots" content="noindex, nofollow"> en todas las páginas.
+# Nota: en GitHub Pages este archivo vive en /sereno/ y no en la raíz del
+# dominio, así que los buscadores no lo leen; queda como documentación.
+User-agent: *
+Allow: /
