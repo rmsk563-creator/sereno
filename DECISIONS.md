@@ -21,3 +21,4 @@
 | 2026-09-23 | **Diseño en Figma antes del código** (plan Professional, equipo UI/UX) | Pedido de Matías: aprobar la propuesta visual antes de implementar |
 | 2026-09-23 | `--borde-campo` pasa de `#8A979F` a `#6F7D86` | 3.0:1 era el mínimo justo para bordes de campos; ahora da 4.2:1 |
 | 2026-09-23 | El bloque principal de Emergencias va en azul noche, con el aviso demo antes del H1 | Remite a la guardia nocturna sin usar rojo de fondo, y el aviso se ve antes que el botón de llamar |
+| 2026-09-23 | Checkpoint 1 de diseño **aprobado**. Antes del código: checkpoint 2 + prototipo navegable mínimo + revisión de la escala tipográfica | Cerrar la fase de Figma completa antes de implementar |
